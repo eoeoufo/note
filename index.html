@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vue学习</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+	<body>
+		<div id="note">
+			<img src="img/cute.png" class="top">
+			<!-- 鼠标按下事件@mouseup -->
+			<input type="text" v-model="message" @keyup.enter="save(message)" placeholder="请输入任务" @mouseup="notip" />
+			<ul>
+				<!--鼠标悬浮事件 @mouseenter>    <!--鼠标离开事件@mouseleave-->
+				<li v-for="(item,index) in arr" @keyup.hover="show" @mouseenter="show(index)" @mouseleave="noShow(index)">
+					<font>{{index+1+"."}} &nbsp; &nbsp; {{item}}</font>
+					<img src="img/cha.png" @click="clear(index)" v-show="showArr[index]">
+				</li>
+			</ul>
+			<div class="info">
+				<span class="ls">{{length}} item left</span>
+				<span class="rs" @click="kong">clear</span>
+			</div>
+			<div class="tip" v-show="isShow">
+				<img src="img/danger.png">
+				<span>{{tip}}</span>
+			</div>
+		</div>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

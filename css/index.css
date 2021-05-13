@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(241, 241, 241);
+}
+
+#note {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-top: 30px;
+	margin: 0 auto;
+	width: 390px;
+}
+
+.top {
+	width: 100px;
+	height: 100px;
+	margin-bottom: -20px;
+}
+
+input {
+	width: 390px;
+	height: 44px;
+	background-color: white;
+	border-color: antiquewhite;
+	border-width: 0.05px;
+	border-style: dotted;
+}
+
+/* 设置输入框提示文本placeholder的样式 */
+input::-webkit-input-placeholder {
+	padding-left: 30px;
+	color: #FAEBD7;
+	font-size: 15px;
+	font-style: italic;
+}
+
+ul {
+	list-style-type: none;
+	width: 390px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+ul>li {
+	height: 44px;
+	border: 1px solid rgb(241, 241, 241);
+}
+
+img {
+	padding-top: 14.5px;
+	width: 15px;
+	height: 15px;
+	margin-right: 5px;
+	float: right;
+}
+
+font {
+	padding-left: 10px;
+	line-height: 44px;
+	text-align: center;
+	font-size: 15px;
+	float: left;
+	color: rgb(141, 137, 143);
+}
+
+.info {
+	padding-top: 5px;
+	width: 390px;
+	height: 44px;
+	background-repeat: no-repeat;
+	background-image: url(../img/bottomn.png);
+}
+
+.ls {
+	float: left;
+	font-size: 5px;
+	color: rgb(141, 137, 143);
+	margin-left: 15px;
+}
+
+.rs {
+	float: right;
+	font-size: 5px;
+	color: rgb(141, 137, 143);
+	margin-right: 15px;
+}
+
+.tip {
+	font-size: 5px;
+	color: red;
+}
+
+.tip img {
+	float: left;
+	padding-top: 0;
+}
