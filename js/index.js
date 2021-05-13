@@ -2,7 +2,7 @@ var app = new Vue({
 	el: "#note",
 	data: {
 		message: "",
-		arr: [],
+		arr: ["吃饭饭","睡觉觉","写代码"],
 		index: 0,
 		length: 0,
 		showArr: [],
